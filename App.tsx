@@ -37,7 +37,7 @@ async function displayNotification(remoteMessage: any) {
   });
 
   await notifee.displayNotification({
-    title: remoteMessage.notification?.title || '📩 New Message',
+    title: remoteMessage.notification?.title || 'New Message',
     body: remoteMessage.notification?.body || '',
     android: {
       channelId,
